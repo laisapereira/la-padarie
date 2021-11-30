@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration: none;
+    font-family: 'Poppins', normal;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.button, .excluir {
+    cursor:pointer;
+}
+
+.cardzinhos:hover {
+    background-color:rgba(247, 228, 204, 0.699)
+}
+
+html {
+    font-size:93.75%; /*15px */
+}
+
+
+body {
+    background-color: #E5CF94;
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #965A1B;
+    padding: 80px 0;
+}
+
+#logo{
+    padding-bottom: 112px;
+}
+
+/*CARDS*/
+
+#cards {
+    display:flex;
+    margin-top: -4rem;
+    justify-content: center;
+    gap:25px;
+}
+
+
+.card, .card3 {
+    background-color:white;
+    padding: 20px 25px;
+    border-radius: 5px; 
+    width:28vw;  
+    display:flex;
+    flex-direction: column;
+    gap:19px;
+}
+
+.card3 {
+    background-color: #5F3305;
+    color:white;
+}
+
+.card3 .row h2, .card3 .conteudo-card p {
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    color: #5F3305;
+    font-size:16px;
+
+}
+
+.card3 h2 {
+    color:white;
+}
+
+.logozinho {
+    height:22px;
+}
+
+.conteudo-card p {
+    font-size: 36px;
+    font-weight:500;
+}
+
+
+/*FIM CARDS*/
+
+/*FORMULÁRIOS */
+
+#pessoas {
+    padding:80px 0;
+    margin:auto;
+}
+
+#principal {
+    display:flex;
+    flex-direction: column;
+    gap:80px;
+}
+
+.cardzinhos {
+    background-color: #FFFFFFCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    width:87vw;
+    padding: 17px;
+   
+}
+
+
+
+#caixinhas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    
+}
+
+.infos {
+    padding:5px;
+    color: #5F3305;
+}
+
+.atributos {
+    display: flex;
+    gap:15px;
+}
+
+.doisp {
+    font-weight: 500;
+}
+
+.adicionar h2 {
+    padding-bottom:25px;
+}
+
+button .excluir {
+    background-color: #FFFFFFCC;
+}
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    padding: 80px;
+    color: #5F3305;
+}
+
+
+/**MODAL**/
+
+.modal-container {
+    display:none;
+    width:100vw;
+    height:100vh;
+    background:rgba(0, 0, 0, .5);
+    position:fixed;
+    top: 0px;
+    left:0px;
+    z-index: 2000;      
+    justify-content: center;
+    align-items: center; 
+}
+
+.modal-container.mostrar {
+    display:flex;
+}
+
+
+.modal {
+    background: white;
+    width:45vw;
+    padding:30px;
+    max-width: 465px;
+    display:flex;
+    flex-direction: column;
+    gap: 63px;
+
+}
+
+.main-modal h2 {
+    font-size: 16px;
+}
+
+#form {
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    padding-top:25px    
+}
+
+#form input {
+    background: #F5F5F5;
+    border-radius:5px;
+    padding: 16px 25px;
+
+}
+
+#button {
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+}
+
+
+#button #enviar {
+    background: #5F3305;
+    color:white;
+    text-align: center;
+    width:100%;
+    padding: 18px;
+    border-radius: 5px;
+
+}
+
+#button #btn-cancelar {
+    background:white;
+    color: #DB1E1E;
+    text-align: center;
+    width:330px;
+    padding: 16px;
+    border: 1px solid #DB1E1E;
+    border-radius: 5px;
+    
+}
+
+small {
+    padding:5px;
+    text-align: left;
+    color:gray
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+/*responsividade mobile */
+
+
+@media screen and (max-width:760px) {
+
+    #cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .card3 {
+        width:88%;
+    }
+
+    #pessoas {
+        padding-top: 80px;
+        gap:0;
+
+    }
+
+    .adicionar h2 {
+        padding-bottom:5px;
+    
+    }
+
+    .cardzinhos {
+        align-items: center;
+    }
+
+    .atributos {
+        flex-direction: column;
+    }
+
+    footer {
+        width:100%;
+    }
+
+    .excluir {
+        width:29px;
+        height: 27px;
+    }
+
+
+
+
+    /*MODAL*/
+
+    .main-modal h2 {
+        text-align: center;
+    }
+
+    .modal {
+        width:90vw;
+    }
+
+    #button {
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
+    }
+
+    #button #btn-cancelar {
+        width: 100%;
+    }
+
+
+    
+     
+}
+
+
+/*responsividade tablet */
+
+@media (min-width:761px) and (max-width:1024px) {
+
+#cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card, .card3 {
+    width:80vw;
+}
+
+.cardzinhos {
+    width:80vw;
+}
+
+#pessoas {
+    padding:60px 0;
+}
+
+.modal {
+    width:70%;
+}
+
+#button {
+    justify-content: center;
+}
+
+}
+

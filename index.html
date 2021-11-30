@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La padarie</title>
+
+    <!--Importando CSS-->
+    <link rel="stylesheet" href="lapad.css">
+
+    <!--Importando Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+    <!-- importando jQuery-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+    <header>
+        <img id="logo" src="imagens/Logo (1).png" alt="logo">
+    </header>
+
+    <main>
+        <div id="principal">
+
+            <section id="cards">
+                <div class="card">
+                    <div class="row">
+                        <h2>Pessoas na fila</h2>
+                        <img class="logozinho" src="imagens/Icon.png" alt="pessoa">
+                    </div>
+                    <div class="conteudo-card">
+                        <p id="qntpessoas">7</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="row">
+                        <h2>Pães vendidos</h2>
+                        <img class="logozinho" src="imagens/Group 1.png" alt="carrinho">
+                    </div>
+
+                    <div class="conteudo-card">
+                        <p id="qntpaes">350</p>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="row">
+                        <h2>Entrada</h2>
+                        <img class="logozinho" src="imagens/Group 2.png" alt="cifrão">
+                    </div>
+
+                    <div class="conteudo-card">
+                        <p id="dinheiro">R$175,00</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="pessoas">
+                <a class="adicionar" href="#">
+                    <h2>+Adicionar pessoa na fila </h2>
+                </a>
+
+                <section id="caixinhas">
+
+                </section>
+
+            </section>
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+    <footer>Com 💛 Info Jr UFBA 2021</footer>
+
+
+    <div id="modal-addpessoa" class="modal-container">
+        <div class="modal">
+            <div class="main-modal">
+                <h2> Adicionar pessoa a fila</h2>
+                <form action="">
+                    <div id="form">
+                        <input type="text" id="nome" placeholder="Nome completo do cliente">
+                        <input type="number" id="quantidade" placeholder="Total de pães">
+                    </div>
+
+                    <small>Insira apenas números</small>
+            </div>
+
+            <div id="button">
+                <input type="button" id="enviar" class="button" value="Enviar">
+                <input type="button" id="btn-cancelar" class="button" value="Cancelar">
+            </div>
+
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
