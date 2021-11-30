@@ -1,6 +1,6 @@
 # La Padarie
 
-Acesse o site por aqui: link
+Acesse o site por aqui: https://la-padarie.netlify.app/
 
 4 projeto realizado no núcleo web (básico) na InfoJr - UFBA.
 
